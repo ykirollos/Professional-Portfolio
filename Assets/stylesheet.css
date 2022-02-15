@@ -1,0 +1,158 @@
+ * {
+  box-sizing: border-box;
+} 
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'lato';
+}
+header{
+  width:100%;
+  background-color:#1a507c;
+  display: flex;
+  justify-content: space-between;
+}
+header .name, .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.name {
+  font-size: 1.5rem;
+  background-color: darkgray;
+  color: whitesmoke;
+  flex: 1;
+  justify-content: left;
+}
+.navbar{
+  margin-left: 0;
+  margin: right 50px;
+  text-align: right;
+  flex: 3;
+  justify-content: right;
+}
+
+
+.navbar a {
+  font-size: medium;
+  color: aliceblue;
+  text-decoration-color: aliceblue;
+  text-decoration-thickness: 0.125em;
+  padding: 3px;
+  align-content:space-between;
+  justify-content: right;
+}
+
+.navbar a:hover {
+  background-color: dimgrey;
+}
+.container{
+  position: relative;
+}
+.safari{
+max-width: 100%;
+height: auto
+}
+.subtitle{
+  position: absolute;
+  font-size: 1rem;
+  bottom: 5px;
+  right: 5px;
+  background-color: black;
+  opacity: 0.5;
+  color: aliceblue;
+  padding: 2px;
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+}
+section #about, #work{
+display: flex;
+font-size:2rem;
+font-weight: bold;
+align-content: center;
+justify-content: center;
+flex: 1;
+min-width: 25%;
+}
+.vline{
+  border-left: 4px solid #1a507c ;
+}
+section #about-paragraph {
+  text-align: left;
+  text-indent: 30px;
+  flex: 4;
+  padding: 20px;
+}
+
+.github{
+display:flex;
+flex:4;
+justify-content: space-around;
+}
+.sslv{
+  position: relative;
+  display: flexbox;
+  padding-left: 20px;
+  padding-right: 20px;
+} 
+.git{
+  color: white;
+  background-color: crimson;
+  font-size: 1rem;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+}
+/* stuff that changes when display is resized */
+@media (max-width: 500px) {
+  header{
+    width:100%;
+    background-color:rgb(26, 80, 124);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  header .name, .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subtitle{
+    position: absolute;
+    font-size: 0.75rem;
+    background-color: black;
+    opacity: 0.5;
+    color: aliceblue;
+    padding: 2px;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  section #about, #work{
+    display: flex;
+    font-size:1rem;
+    font-weight: bold;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+    padding:2px;
+    }
+    .vline{
+      border-bottom: 4px solid #1a507c ;
+    }
+    section #about-paragraph {
+      text-align: left;
+      text-indent: 30px;
+    }
+
+}
