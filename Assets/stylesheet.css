@@ -66,7 +66,7 @@ height: auto
 
 section{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 section #about, #work{
 display: flex;
@@ -107,6 +107,21 @@ justify-content: space-around;
   bottom: 10px;
   left: 10px;
 
+}
+.calc-pic{
+  display: flex;
+  width: auto;
+  height: 400px;
+  padding-left: 35em;
+  padding-right: 2em;
+  margin-top: 1em;
+}
+.ledwall-pic{
+  display: flex;
+  width: auto;
+  height: 400px;
+  padding-right :6em;
+  margin-top: 1em;
 }
 /* stuff that changes when display is resized */
 @media (max-width: 500px) {
