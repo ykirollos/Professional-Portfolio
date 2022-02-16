@@ -94,7 +94,7 @@ justify-content: space-around;
 }
 .sslv{
   position: relative;
-  display: flexbox;
+  display: flex;
   padding-left: 20px;
   padding-right: 20px;
 } 
