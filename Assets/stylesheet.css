@@ -5,8 +5,9 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'lato';
+  scroll-behavior:smooth;
 }
-header{
+header, footer{
   width:100%;
   background-color:#1a507c;
   display: flex;
@@ -28,7 +29,7 @@ header .name, .navbar {
   margin-left: 0;
   margin: right 50px;
   text-align: right;
-  flex: 3;
+  flex: 4;
   justify-content: right;
 }
 
@@ -68,7 +69,7 @@ section{
   display: flex;
   justify-content: space-evenly;
 }
-section #about, #work{
+section #about, #work, #contact{
 display: flex;
 font-size:2rem;
 font-weight: bold;
@@ -87,41 +88,104 @@ section #about-paragraph {
   padding: 20px;
 }
 
-.github{
-display:flex;
-flex:4;
-justify-content: space-around;
+.workbox, .info{
+display: flex;
+flex: 4;
+flex-direction: column;
+max-width: 75%;
+justify-content: center;
 }
-.sslv{
+.github{
+  display:flex;
+  flex:4;
+  justify-content: space-evenly;
+}
+.self{
   position: relative;
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1250px;
+  border-color: rgb(38, 93, 245);
+  border-style: solid;
+  border-width: 5px;
+  
 } 
 .git{
   color: white;
   background-color: crimson;
-  font-size: 1rem;
+  height:fit-content;
+  opacity: 75%;
+  font-size: 2rem;
   text-decoration: none;
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-
+  right: 75rem;
+  top: 66rem;
+  
+  
+}
+.w2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 .calc-pic{
   display: flex;
-  width: auto;
+  position: relative;
+  width: 600px;
   height: 400px;
-  padding-left: 35em;
-  padding-right: 2em;
-  margin-top: 1em;
+  margin-left: 60px ;
+  border-color: rgb(38, 93, 245);
+  border-style: solid;
+  border-width: 5px;
+}
+.calc{
+  color: white;
+  background-color: crimson;
+  height:fit-content;
+  opacity: 75%;
+  font-size: 2rem;
+  text-decoration: none;
+  position: absolute;
+  right: 73rem;
+  top: 92rem;
 }
 .ledwall-pic{
   display: flex;
-  width: auto;
+  position: relative;
+  width: 600px;
   height: 400px;
-  padding-right :6em;
-  margin-top: 1em;
+  margin-right: 60px;
+  border-color: rgb(38, 93, 245);
+  border-style: solid;
+  border-width: 5px;
+}
+.led{
+  color: white;
+  background-color: crimson;
+  height:fit-content;
+  opacity: 75%;
+  font-size: 2rem;
+  text-decoration: none;
+  position: absolute;
+  right: 8rem;
+  top: 92rem;
+}
+section img:hover{
+  opacity: 70%;
+}
+.info ul{
+  display: flex;
+  font-weight: bold;
+  text-decoration-color: rgb(7, 89, 160);
+  text-decoration-thickness: 0.125em;
+  padding: 3px;
+  justify-content:space-around;
+  list-style: none;
+}
+footer{
+  width: 100%;
+  color: aliceblue;
+  justify-content: center;
 }
 /* stuff that changes when display is resized */
 @media (max-width: 500px) {
@@ -169,5 +233,12 @@ justify-content: space-around;
       text-align: left;
       text-indent: 30px;
     }
+  .work{
+display: flex;
+flex-direction: column;
+  }
+  .w2{
+    flex-direction: column;
+  }
 
 }
