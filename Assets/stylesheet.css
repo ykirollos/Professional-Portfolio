@@ -175,6 +175,7 @@ section img:hover{
 }
 .info ul{
   display: flex;
+  font-size: 1.25rem;
   font-weight: bold;
   text-decoration-color: rgb(7, 89, 160);
   text-decoration-thickness: 0.125em;
